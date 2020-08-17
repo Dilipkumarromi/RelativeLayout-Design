@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B-Left"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B-Right"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button-Left"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button-Right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/btnCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button-Center"
+        android:layout_centerInParent="true"/>
+<!--@id/btnCenter Means Refering to id-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnCenter"
+        android:text="Center-Left"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center-right"
+        android:layout_toRightOf="@id/btnCenter"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnCenter"
+        android:text="Center-UP"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCenter"
+        android:text="Center-Down"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
